@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import logoUrl from "@/assets/nemsyn-logo.svg";
+import logoUrl from "@/assets/nemsyn-logo-menu.png";
 
 const links = [
   { href: "#om", label: "Om os" },
@@ -30,7 +30,7 @@ export function Navbar() {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full border-b border-transparent bg-white/90 backdrop-blur transition-all ${
+      className={`sticky top-0 z-50 w-full border-b border-transparent bg-gray-50 transition-all ${
         scrolled ? "border-border py-2 shadow-[0_2px_16px_-8px_rgba(36,43,48,0.15)]" : "py-4"
       }`}
     >
@@ -39,7 +39,7 @@ export function Navbar() {
           <img
             src={logoUrl}
             alt="NemSyn"
-            className={`w-auto transition-all duration-300 ${scrolled ? "h-12" : "h-16 md:h-16"}`}
+            className={`h-auto transition-all duration-300 ${scrolled ? "max-w-40 max-h-9" : "max-w-56 max-h-12"}`}
           />
         </a>
 
@@ -86,7 +86,7 @@ export function Navbar() {
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
-              className="rounded-lg px-3 py-4 text-lg font-semibold text-foreground transition-colors hover:bg-[color:var(--brand-neutral)]"
+              className="rounded-lg px-3 py-4 text-lg font-semibold text-foreground bg-[color:var(--brand-neutral)] transition-colors hover:bg-[color:var(--brand-red)] hover:text-white"
             >
               {l.label}
             </a>

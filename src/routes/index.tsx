@@ -16,6 +16,9 @@ function Index() {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
+      <div className="bg-[color:var(--brand-red)] text-white py-8 text-center">
+        <p className="text-xl font-bold">Vi åbner 1. september 2026</p>
+      </div>
       <main>
         <Hero />
         <Features />
