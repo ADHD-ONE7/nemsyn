@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import logoUrl from "@/assets/nemsyn-logo-menu.png";
+import logoUrl from "@/assets/nemsyn-logo-navbar.png";
 
 const links = [
   { href: "#om", label: "Om os" },
@@ -39,7 +39,9 @@ export function Navbar() {
           <img
             src={logoUrl}
             alt="NemSyn"
-            className={`h-auto transition-all duration-300 ${scrolled ? "max-w-40 max-h-9" : "max-w-56 max-h-12"}`}
+            className={`block w-auto max-w-full object-contain transition-all duration-300 ${
+              scrolled ? "h-9 md:h-[46px]" : "h-11 md:h-[58px]"
+            }`}
           />
         </a>
 
@@ -75,8 +77,10 @@ export function Navbar() {
       </div>
 
       {/* Mobile menu */}
+      {/* Anchored to the header's bottom edge, so it follows the navbar height
+          instead of a hard-coded offset. */}
       <div
-        className={`md:hidden fixed inset-x-0 top-[64px] bottom-0 z-40 bg-white transition-all duration-300 ${
+        className={`md:hidden absolute inset-x-0 top-full z-40 h-[calc(100dvh-100%)] overflow-y-auto bg-white transition-all duration-300 ${
           open ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
         }`}
       >
