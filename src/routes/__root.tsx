@@ -77,14 +77,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "NemSyn – Professionelt bilsyn i Herning, Midtjylland" },
+      { title: "NemSyn – Dit bilsyn – Vores ansvar" },
       {
         name: "description",
         content:
           "Bestil bilsyn nemt og hurtigt hos NemSyn ApS på Nr. Lindvej 1, Herning. Drive-in synshal med ærlige priser.",
       },
       { name: "author", content: "NemSyn ApS" },
-      { property: "og:title", content: "NemSyn – Professionelt bilsyn i Herning, Midtjylland" },
+      { property: "og:title", content: "NemSyn – Dit bilsyn – Vores ansvar" },
       {
         property: "og:description",
         content:
@@ -93,7 +93,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "NemSyn" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "NemSyn – Professionelt bilsyn i Herning" },
+      { name: "twitter:title", content: "NemSyn – Dit bilsyn – Vores ansvar" },
       {
         name: "twitter:description",
         content: "Drive-in synshal med ærlige priser. Bestil bilsyn online 24/7.",
@@ -101,11 +101,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      {
-        rel: "icon",
-        href: "/favicon.ico",
-        type: "image/x-icon",
-      },
+      // Square crop of the logo mark. The previous favicon was a 1536x1024 PNG
+      // named .ico, which browsers squashed into an oval in the tab.
+      { rel: "icon", href: "/favicon.ico", sizes: "48x48 32x32 16x16" },
+      { rel: "icon", href: "/favicon.png", type: "image/png", sizes: "256x256" },
+      { rel: "apple-touch-icon", href: "/favicon.png" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
