@@ -1,9 +1,6 @@
 [build]
   command = "npm run build"
-  publish = "dist"
+  publish = "dist/client"
 
 [build.environment]
   NODE_VERSION = "22"
-  # TanStack Start builds through Nitro. Without this the build falls back to the
-  # Cloudflare preset, which emits no Netlify function -> every route 404s.
-  NITRO_PRESET = "netlify"
