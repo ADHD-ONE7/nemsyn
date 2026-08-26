@@ -85,13 +85,13 @@ export function Priser() {
           ))}
         </div>
 
-        <p className="mx-auto mt-10 max-w-2xl text-center text-sm text-muted-foreground">
-          <strong className="font-semibold text-foreground">
+        <div className="mx-auto mt-10 max-w-2xl text-center text-sm text-muted-foreground">
+          <p className="font-semibold text-foreground">
             Lille omsyn gælder ved højst 3 fejl, som kan kontrolleres uden brug
             af lift, bremsefelt eller andet kontroludstyr.
-          </strong>{" "}
-          Alle priser er inkl. moms og myndighedsgebyrer.
-        </p>
+          </p>
+          <p className="mt-2">Alle priser er inkl. moms og myndighedsgebyrer.</p>
+        </div>
       </div>
     </section>
   );
