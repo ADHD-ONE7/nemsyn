@@ -32,12 +32,12 @@ const groups: { title: string; items: { name: string; detail: string; price: str
   {
     title: "Øvrige ydelser",
     items: [
-      { name: "Toldsyn", detail: "Import- og eksportsyn", price: "499 kr" },
+      { name: "Toldsyn", detail: "Tillæg til registreringssyn ved import eller eksport af køretøjer", price: "499 kr" },
       { name: "Indscanning til FS", detail: "Tillæg ved toldsyn, konstruktive ændringer mv.", price: "99 kr" },
-      { name: "Afmelding af nummerplader", detail: "Pr. gang", price: "100 kr" },
+      { name: "Afmelding af nummerplader", detail: "Pr. afmelding", price: "100 kr" },
       { name: "Miljømærke Grøn", detail: "Tysk miljømærke", price: "200 kr" },
       { name: "Miljømærke Blå", detail: "Tysk miljømærke", price: "250 kr" },
-      { name: "Registrering af konstruktive ændringer", detail: "Pr. gang", price: "299 kr" },
+      { name: "Registrering af konstruktive ændringer", detail: "Pr. registrering", price: "299 kr" },
       { name: "Brugtbilsattest", detail: "Inkl. syn", price: "1.499 kr" },
       { name: "Nummerplader", detail: "1 sæt", price: "1.495 kr" },
       { name: "Nummerplade", detail: "1 stk.", price: "849 kr" },
@@ -86,9 +86,11 @@ export function Priser() {
         </div>
 
         <p className="mx-auto mt-10 max-w-2xl text-center text-sm text-muted-foreground">
-          Alle priser er inkl. moms og gebyr til myndighederne. Lille omsyn
-          gælder ved maks. 3 fejl, som kan kontrolleres uden brug af
-          kontroludstyr som lift, bremsefelt eller lignende udstyr.
+          <strong className="font-semibold text-foreground">
+            Lille omsyn gælder ved højst 3 fejl, som kan kontrolleres uden brug
+            af lift, bremsefelt eller andet kontroludstyr.
+          </strong>{" "}
+          Alle priser er inkl. moms og myndighedsgebyrer.
         </p>
       </div>
     </section>
