@@ -59,7 +59,9 @@ export function Navbar() {
 
         <div className="flex items-center gap-2">
           <a
-            href="#kontakt"
+            href="https://booking.synsdata.dk/10449-470"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-full bg-[color:var(--brand-red)] px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:bg-[#b40e12] hover:shadow-md"
           >
             Book tid
@@ -96,7 +98,9 @@ export function Navbar() {
             </a>
           ))}
           <a
-            href="#kontakt"
+            href="https://booking.synsdata.dk/10449-470"
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => setOpen(false)}
             className="mt-4 inline-flex items-center justify-center rounded-full bg-[color:var(--brand-red)] px-5 py-4 text-base font-semibold text-white"
           >

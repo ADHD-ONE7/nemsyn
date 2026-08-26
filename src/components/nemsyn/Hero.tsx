@@ -29,7 +29,9 @@ export function Hero() {
         </p>
         <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
           <a
-            href="#kontakt"
+            href="https://booking.synsdata.dk/10449-470"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-[color:var(--brand-red)] px-7 py-3.5 text-base font-semibold text-white shadow-sm transition-all hover:bg-[#b40e12] hover:shadow-lg sm:w-auto"
           >
             Book tid nu
