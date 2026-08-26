@@ -1,4 +1,4 @@
-import logoUrl from "@/assets/nemsyn-logo.svg";
+import logoUrl from "@/assets/nemsyn-logo-navbar.png";
 
 const links = [
   { href: "#om", label: "Om os" },
@@ -15,13 +15,10 @@ export function Footer() {
           <div className="flex flex-col items-center md:items-start">
             <img
               src={logoUrl}
-              alt="NemSyn"
-              className="h-12 w-auto"
+              alt="NemSyn — dit bilsyn, vores ansvar"
+              className="h-14 w-auto"
               style={{ filter: "brightness(0) invert(1)" }}
             />
-            <p className="mt-4 max-w-xs text-sm italic text-white/70">
-              Dit bilsyn – vores ansvar
-            </p>
           </div>
 
           <div>

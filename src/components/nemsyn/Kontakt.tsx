@@ -64,7 +64,7 @@ export function Kontakt() {
             Skriv til os — vi vender hurtigt tilbage
           </h2>
           <p className="mt-4 text-base text-muted-foreground">
-            Har du et spørgsmål eller vil du booke en tid? Udfyld formularen, så hører du fra os.
+            Har du et spørgsmål? Udfyld formularen, så hører du fra os.
           </p>
         </ScrollReveal>
 
@@ -190,7 +190,12 @@ export function Kontakt() {
                   </li>
                   <li className="flex gap-3">
                     <Mail size={18} className="mt-0.5 shrink-0 text-[color:var(--brand-red)]" />
-                    <span className="text-muted-foreground">kontakt@nemsyn.dk</span>
+                    <a
+                      href="mailto:info@nemsyn.dk"
+                      className="font-medium text-foreground hover:text-[color:var(--brand-red)]"
+                    >
+                      info@nemsyn.dk
+                    </a>
                   </li>
                   <li className="flex gap-3">
                     <Building2 size={18} className="mt-0.5 shrink-0 text-[color:var(--brand-red)]" />
