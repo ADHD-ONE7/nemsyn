@@ -32,7 +32,7 @@ const groups: { title: string; items: { name: string; detail: string; price: str
   {
     title: "Øvrige ydelser",
     items: [
-      { name: "Toldsyn", detail: "Importerede køretøjer", price: "499 kr" },
+      { name: "Toldsyn", detail: "Import- og eksportsyn", price: "499 kr" },
       { name: "Indscanning til FS", detail: "Tillæg ved toldsyn, konstruktive ændringer mv.", price: "99 kr" },
       { name: "Afmelding af nummerplader", detail: "Pr. gang", price: "100 kr" },
       { name: "Miljømærke Grøn", detail: "Tysk miljømærke", price: "200 kr" },
