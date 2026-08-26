@@ -6,8 +6,9 @@ const services: { title: string; body: string; badge?: string }[] = [
     body: "For personbil, varebil og motorcykel — det lovpligtige syn med grundig gennemgang.",
   },
   {
-    title: "Registreringssyn",
-    body: "Syn ved ejerskifte, import eller ombygning. Vi klarer papirarbejdet med.",
+    title: "Omsyn",
+    body: "Omsyn efter udbedring af fejl på personbil, varebil, motorcykel eller påhængskøretøj.",
+    badge: "Fra 299 kr",
   },
   {
     title: "Toldsyn",
@@ -19,13 +20,12 @@ const services: { title: string; body: string; badge?: string }[] = [
     badge: "Fra 199 kr",
   },
   {
-    title: "Omsyn",
-    body: "Omsyn efter udbedring af fejl på personbil, varebil, motorcykel eller påhængskøretøj.",
-    badge: "Fra 299 kr",
+    title: "Registreringssyn",
+    body: "Til import, ombygning og ændringer i Motorregisteret (DMR). Vi sørger for en enkel proces.",
   },
   {
-    title: "Nummerplader & omregistrering",
-    body: "Nummerplader, afmelding, omregistrering, brugtbilsattest og tyske miljømærker.",
+    title: "Motorkontor",
+    body: "Vi hjælper med nummerplader, afmelding, omregistrering og andre opgaver i Motorregisteret.",
   },
 ];
 
@@ -38,10 +38,10 @@ export function Ydelser() {
             Ydelser
           </p>
           <h2 className="mt-3 text-3xl font-extrabold text-foreground sm:text-4xl">
-            Alt inden for bilsyn — ét sted
+            Bilsyn og motorkontor under samme tag
           </h2>
           <p className="mt-4 text-base text-muted-foreground">
-            Vi tilbyder hele paletten af syn og diagnostik til privat og erhverv.
+            Få klaret syn og nummerplader ét sted — nemt, hurtigt og enkelt.
           </p>
         </ScrollReveal>
 

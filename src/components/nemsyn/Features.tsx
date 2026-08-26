@@ -2,7 +2,7 @@ import {
   Car,
   Search,
   Smartphone,
-  ClipboardList,
+  Handshake,
   Star,
   type LucideIcon,
 } from "lucide-react";
@@ -20,7 +20,7 @@ const features: { icon: LucideIcon; title: string; body: string }[] = [
     icon: Search,
     title: "Teknisk ekspertise i fokus",
     body:
-      "Vores synsmænd har baggrund i automotive og teknisk fagområde. Du får et syn med faglig dybde, ikke bare et stempel.",
+      "Vores synsmænd har teknisk erfaring og faglig viden. Du får et grundigt syn – ikke bare et stempel.",
   },
   {
     icon: Smartphone,
@@ -29,10 +29,10 @@ const features: { icon: LucideIcon; title: string; body: string }[] = [
       "Tidsbestilling direkte fra mobilen, når det passer dig. Ingen telefonkø, ingen ventetid på svar.",
   },
   {
-    icon: ClipboardList,
-    title: "Gennemsigtige priser",
+    icon: Handshake,
+    title: "Personlig service",
     body:
-      "Faste priser uden skjulte tillæg. Du ved præcis hvad det koster, før du booker — ingen ubehagelige overraskelser.",
+      "Hos os møder du synsmænd, der tager sig tid til både din bil og dine spørgsmål.",
   },
 ];
 
