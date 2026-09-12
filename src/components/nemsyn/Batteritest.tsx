@@ -17,7 +17,7 @@ const points: { icon: LucideIcon; title: string; body: string }[] = [
   },
   {
     icon: Clock,
-    title: "Grundig analyse på 20 minutter",
+    title: "Grundig analyse",
     body: "Vores kvalificerede medarbejdere analyserer batteriets data og giver dig et klart billede af dets aktuelle tilstand.",
   },
   {
