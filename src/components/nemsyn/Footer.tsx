@@ -3,6 +3,7 @@ import logoUrl from "@/assets/nemsyn-logo-navbar.png";
 const links = [
   { href: "#om", label: "Om os" },
   { href: "#ydelser", label: "Ydelser" },
+  { href: "#batteritest", label: "Batteritest" },
   { href: "#priser", label: "Priser" },
   { href: "#kontakt", label: "Kontakt" },
 ];

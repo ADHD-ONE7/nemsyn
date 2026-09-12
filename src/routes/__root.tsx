@@ -81,14 +81,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Bestil bilsyn nemt og hurtigt hos NemSyn ApS på Nr. Lindvej 1, Herning. Drive-in synshal med ærlige priser.",
+          "Bestil bilsyn nemt og hurtigt hos NemSyn ApS på Nr. Lindvej 1, Herning. Drive-in synshal med ærlige priser — nu også batteritest af elbiler med battericertifikat.",
       },
       { name: "author", content: "NemSyn ApS" },
       { property: "og:title", content: "NemSyn – Dit bilsyn – Vores ansvar" },
       {
         property: "og:description",
         content:
-          "Bestil bilsyn nemt og hurtigt hos NemSyn ApS på Nr. Lindvej 1, Herning. Drive-in synshal med ærlige priser.",
+          "Bestil bilsyn nemt og hurtigt hos NemSyn ApS på Nr. Lindvej 1, Herning. Drive-in synshal med ærlige priser — nu også batteritest af elbiler med battericertifikat.",
       },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "NemSyn" },

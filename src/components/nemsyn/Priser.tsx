@@ -30,6 +30,21 @@ const groups: { title: string; items: { name: string; detail: string; price: str
     ],
   },
   {
+    title: "Batteritest af elbil",
+    items: [
+      {
+        name: "Batteritest",
+        detail: "Test af højvoltsbatteriet i synshallen — inkl. battericertifikat",
+        price: "995 kr",
+      },
+      {
+        name: "Batteritest med udkørsel",
+        detail: "Vi kører ud til bilen inden for Herning Kommune — inkl. battericertifikat",
+        price: "1.499 kr",
+      },
+    ],
+  },
+  {
     title: "Øvrige ydelser",
     items: [
       { name: "Toldsyn", detail: "Tillæg til registreringssyn ved import eller eksport af køretøjer", price: "499 kr" },

@@ -4,6 +4,7 @@ import { Hero } from "@/components/nemsyn/Hero";
 import { Features } from "@/components/nemsyn/Features";
 import { OmOs } from "@/components/nemsyn/OmOs";
 import { Ydelser } from "@/components/nemsyn/Ydelser";
+import { Batteritest } from "@/components/nemsyn/Batteritest";
 import { Priser } from "@/components/nemsyn/Priser";
 import { Kontakt } from "@/components/nemsyn/Kontakt";
 import { Footer } from "@/components/nemsyn/Footer";
@@ -21,6 +22,7 @@ function Index() {
         <Features />
         <OmOs />
         <Ydelser />
+        <Batteritest />
         <Priser />
         <Kontakt />
       </main>

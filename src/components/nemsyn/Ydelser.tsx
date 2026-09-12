@@ -1,3 +1,4 @@
+import { ArrowRight } from "lucide-react";
 import { ScrollReveal } from "./ScrollReveal";
 
 const services: { title: string; body: string; badge?: string }[] = [
@@ -46,6 +47,31 @@ export function Ydelser() {
         </ScrollReveal>
 
         <div className="mt-14 grid grid-cols-1 gap-4 md:grid-cols-2">
+          <ScrollReveal className="md:col-span-2">
+            <a
+              href="#batteritest"
+              className="group flex h-full flex-col justify-between gap-5 rounded-xl border border-border border-l-4 border-l-[color:var(--brand-red)] bg-[color:var(--brand-charcoal)] p-6 text-white transition-shadow hover:shadow-md sm:flex-row sm:items-center"
+            >
+              <div className="min-w-0">
+                <span className="inline-flex items-center rounded-full bg-[color:var(--brand-red)] px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white">
+                  Nyhed
+                </span>
+                <h3 className="mt-3 text-base font-bold">Batteritest af elbil</h3>
+                <p className="mt-2 text-sm leading-relaxed text-white/70">
+                  Grundig 20-minutters test af højvoltsbatteriet — med dokumenteret
+                  battericertifikat. Vi kører også ud til bilen i Herning Kommune.
+                </p>
+              </div>
+              <span className="inline-flex shrink-0 items-center gap-2 text-sm font-semibold">
+                Fra 995 kr
+                <ArrowRight
+                  size={18}
+                  className="transition-transform group-hover:translate-x-0.5"
+                />
+              </span>
+            </a>
+          </ScrollReveal>
+
           {services.map((s, i) => (
             <ScrollReveal key={s.title} delay={i * 40}>
               <article className="h-full rounded-xl border border-border border-l-4 border-l-[color:var(--brand-red)] bg-white p-6 transition-shadow hover:shadow-md">

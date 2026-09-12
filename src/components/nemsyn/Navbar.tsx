@@ -5,6 +5,7 @@ import logoUrl from "@/assets/nemsyn-logo-navbar.png";
 const links = [
   { href: "#om", label: "Om os" },
   { href: "#ydelser", label: "Ydelser" },
+  { href: "#batteritest", label: "Batteritest" },
   { href: "#priser", label: "Priser" },
   { href: "#find", label: "Find os" },
   { href: "#kontakt", label: "Kontakt" },
@@ -45,12 +46,12 @@ export function Navbar() {
           />
         </a>
 
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-4 md:flex lg:gap-8">
           {links.map((l) => (
             <a
               key={l.href}
               href={l.href}
-              className="text-sm font-medium text-foreground/80 transition-colors hover:text-[color:var(--brand-red)]"
+              className="whitespace-nowrap text-sm font-medium text-foreground/80 transition-colors hover:text-[color:var(--brand-red)]"
             >
               {l.label}
             </a>
