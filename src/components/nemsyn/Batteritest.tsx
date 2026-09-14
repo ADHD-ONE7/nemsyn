@@ -35,7 +35,7 @@ const points: { icon: LucideIcon; title: string; body: string }[] = [
 const prices: { name: string; detail: string; price: string }[] = [
   {
     name: "Hos os i synshallen",
-    detail: "Nr. Lindvej 1, Herning — kør ind, og du er videre igen efter ca. 20 minutter.",
+    detail: "Nr. Lindvej 1, Herning — testen udføres i vores synshal.",
     price: "995 kr",
   },
   {
@@ -76,8 +76,8 @@ export function Batteritest() {
           </h2>
           <p className="mt-4 text-base leading-relaxed text-white/75">
             Batteriet er elbilens dyreste komponent. Vores kvalificerede medarbejdere udfører en
-            grundig 20-minutters test af højvoltsbatteriet og udsteder et dokumenteret
-            battericertifikat med en tydelig vurdering af batteriets tilstand.
+            grundig test af højvoltsbatteriet og udsteder et dokumenteret battericertifikat med en
+            tydelig vurdering af batteriets tilstand.
           </p>
         </ScrollReveal>
 

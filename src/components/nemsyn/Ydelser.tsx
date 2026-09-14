@@ -58,8 +58,8 @@ export function Ydelser() {
                 </span>
                 <h3 className="mt-3 text-base font-bold">Batteritest af elbil</h3>
                 <p className="mt-2 text-sm leading-relaxed text-white/70">
-                  Grundig 20-minutters test af højvoltsbatteriet — med dokumenteret
-                  battericertifikat. Vi kører også ud til bilen i Herning Kommune.
+                  Grundig test af højvoltsbatteriet — med dokumenteret battericertifikat. Vi kører
+                  også ud til bilen i Herning Kommune.
                 </p>
               </div>
               <span className="inline-flex shrink-0 items-center gap-2 text-sm font-semibold">
