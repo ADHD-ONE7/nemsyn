@@ -83,13 +83,7 @@ export function Batteritest() {
 
         <div className="mt-14 grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-14">
           <ScrollReveal>
-            <h3 className="text-xl font-bold">Professionel batteritest – udført af fagfolk</h3>
-            <p className="mt-2 text-sm leading-relaxed text-white/70">
-              En grundig 20-minutters analyse af elbilens højvoltsbatteri – uafhængig af
-              bilproducentens egne tal, og uden at bilen skal køres tom eller efterlades hos os.
-            </p>
-
-            <ul className="mt-8 space-y-6">
+            <ul className="space-y-6">
               {points.map((p) => {
                 const Icon = p.icon;
                 return (
