@@ -15,7 +15,7 @@ const points: { icon: LucideIcon; title: string; body: string }[] = [
   {
     icon: UserCheck,
     title: "Udføres af erfarne synsmedarbejdere",
-    body: "Testen følger en professionel procedure.",
+    body: "Testen udføres af vores erfarne fagfolk efter en fast og professionel procedure.",
   },
 ];
 
@@ -70,7 +70,7 @@ export function Batteritest() {
           </p>
         </ScrollReveal>
 
-        <div className="mx-auto max-w-2xl">
+        <div className="mt-14 grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-14">
           <ScrollReveal delay={120}>
             <div className="rounded-2xl border border-white/15 bg-white/10 p-6 backdrop-blur-sm sm:p-8">
               <p className="text-sm font-semibold uppercase tracking-wider text-[color:var(--brand-red)]">
@@ -126,26 +126,26 @@ export function Batteritest() {
               </p>
             </div>
           </ScrollReveal>
-        </div>
 
-        <ScrollReveal className="mt-14">
-          <ul className="space-y-6">
-            {points.map((p) => {
-              const Icon = p.icon;
-              return (
-                <li key={p.title} className="flex gap-4">
-                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[color:var(--brand-red)] text-white">
-                    <Icon size={20} strokeWidth={2} />
-                  </span>
-                  <div className="min-w-0">
-                    <p className="font-bold">{p.title}</p>
-                    <p className="mt-1 text-sm leading-relaxed text-white/70">{p.body}</p>
-                  </div>
-                </li>
-              );
-            })}
-          </ul>
-        </ScrollReveal>
+          <ScrollReveal>
+            <ul className="space-y-6">
+              {points.map((p) => {
+                const Icon = p.icon;
+                return (
+                  <li key={p.title} className="flex gap-4">
+                    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[color:var(--brand-red)] text-white">
+                      <Icon size={20} strokeWidth={2} />
+                    </span>
+                    <div className="min-w-0">
+                      <p className="font-bold">{p.title}</p>
+                      <p className="mt-1 text-sm leading-relaxed text-white/70">{p.body}</p>
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
+          </ScrollReveal>
+        </div>
 
         <div className="mt-14 grid grid-cols-1 gap-4 md:grid-cols-3">
           {cases.map((c, i) => (
