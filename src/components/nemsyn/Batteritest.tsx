@@ -51,7 +51,12 @@ export function Batteritest() {
   return (
     <section
       id="batteritest"
-      className="bg-[color:var(--brand-charcoal)] py-20 text-white md:py-28"
+      style={{
+        backgroundImage: `linear-gradient(rgba(36, 43, 48, 0.75), rgba(36, 43, 48, 0.75)), url('/assets/batteritest-bg.webp')`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+      className="py-20 text-white md:py-28"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <ScrollReveal className="mx-auto max-w-2xl text-center">
