@@ -1,24 +1,11 @@
-import {
-  PlugZap,
-  Clock,
-  FileCheck2,
-  UserCheck,
-  Phone,
-  ArrowRight,
-  type LucideIcon,
-} from "lucide-react";
+import { PlugZap, FileCheck2, UserCheck, Phone, ArrowRight, type LucideIcon } from "lucide-react";
 import { ScrollReveal } from "./ScrollReveal";
 
 const points: { icon: LucideIcon; title: string; body: string }[] = [
   {
     icon: PlugZap,
     title: "Test via bilens OBD-stik",
-    body: "Batteriets data aflæses direkte gennem bilens OBD-stik, uden prøvetur eller afladning.",
-  },
-  {
-    icon: Clock,
-    title: "Grundig analyse",
-    body: "Vores kvalificerede medarbejdere analyserer batteriets data og giver dig et klart billede af dets aktuelle tilstand.",
+    body: "Batteriets data aflæses direkte gennem bilens OBD-stik.",
   },
   {
     icon: FileCheck2,
@@ -27,7 +14,7 @@ const points: { icon: LucideIcon; title: string; body: string }[] = [
   },
   {
     icon: UserCheck,
-    title: "Udføres af kvalificerede medarbejdere",
+    title: "Udføres af erfarne synsmedarbejdere",
     body: "Testen udføres af vores erfarne fagfolk efter en fast og professionel procedure.",
   },
 ];
@@ -68,10 +55,7 @@ export function Batteritest() {
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <ScrollReveal className="mx-auto max-w-2xl text-center">
-          <p className="text-sm font-semibold uppercase tracking-wider text-white/60">
-            Nyhed · Elbil
-          </p>
-          <h2 className="mt-3 text-3xl font-extrabold sm:text-4xl">
+          <h2 className="text-3xl font-extrabold sm:text-4xl">
             Batteritest af elbil – med battericertifikat
           </h2>
           <p className="mt-4 text-base leading-relaxed text-white/75">
