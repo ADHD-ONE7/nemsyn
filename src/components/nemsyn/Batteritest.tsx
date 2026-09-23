@@ -71,6 +71,62 @@ export function Batteritest() {
         </ScrollReveal>
 
         <div className="mt-14 grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-14">
+          <ScrollReveal delay={120}>
+            <div className="rounded-2xl border border-white/15 bg-white/10 p-6 backdrop-blur-sm sm:p-8">
+              <p className="text-sm font-semibold uppercase tracking-wider text-[color:var(--brand-red)]">
+                Priser
+              </p>
+              <h3 className="mt-2 text-xl font-bold text-white">
+                Batteritest inkl. battericertifikat
+              </h3>
+
+              <ul className="mt-6 space-y-4">
+                {prices.map((p) => (
+                  <li
+                    key={p.name}
+                    className="flex items-start justify-between gap-4 rounded-xl border border-white/20 border-l-4 border-l-[color:var(--brand-red)] bg-white/5 p-4"
+                  >
+                    <div className="min-w-0">
+                      <p className="text-base font-bold text-white">{p.name}</p>
+                      <p className="mt-1 text-sm leading-relaxed text-white/70">{p.detail}</p>
+                    </div>
+                    <p className="shrink-0 text-base font-extrabold text-[color:var(--brand-red)] sm:text-lg">
+                      {p.price}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+
+              <p className="mt-6 font-semibold text-white">Bestil tid allerede i dag</p>
+              <div className="mt-3 flex flex-col gap-3 sm:flex-row">
+                <a
+                  href="tel:+4555222506"
+                  className="inline-flex flex-1 items-center justify-center gap-2 rounded-full bg-[color:var(--brand-red)] px-6 py-3.5 text-base font-semibold text-white shadow-sm transition-all hover:bg-[#b40e12] hover:shadow-md"
+                >
+                  <Phone size={18} />
+                  Ring 55 22 25 06
+                </a>
+                <a
+                  href="https://booking.synsdata.dk/10449-470"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-flex flex-1 items-center justify-center gap-2 rounded-full border-2 border-white/30 px-6 py-3.5 text-base font-semibold text-white transition-colors hover:border-[color:var(--brand-red)] hover:bg-[color:var(--brand-red)]/10"
+                >
+                  Book tid
+                  <ArrowRight
+                    size={18}
+                    className="transition-transform group-hover:translate-x-0.5"
+                  />
+                </a>
+              </div>
+
+              <p className="mt-4 text-xs leading-relaxed text-white/60">
+                Priserne er inkl. moms og inkluderer battericertifikat. Vi tester de fleste el- og
+                plugin-hybridmodeller. Battericertifikatet udstedes i samarbejde med AVILOO.
+              </p>
+            </div>
+          </ScrollReveal>
+
           <ScrollReveal>
             <ul className="space-y-6">
               {points.map((p) => {
@@ -88,64 +144,6 @@ export function Batteritest() {
                 );
               })}
             </ul>
-          </ScrollReveal>
-
-          <ScrollReveal delay={120}>
-            <div className="rounded-2xl bg-white p-6 text-foreground shadow-[0_25px_60px_-20px_rgba(0,0,0,0.55)] sm:p-8">
-              <p className="text-sm font-semibold uppercase tracking-wider text-[color:var(--brand-red)]">
-                Priser
-              </p>
-              <h3 className="mt-2 text-xl font-bold text-foreground">
-                Batteritest inkl. battericertifikat
-              </h3>
-
-              <ul className="mt-6 space-y-4">
-                {prices.map((p) => (
-                  <li
-                    key={p.name}
-                    className="flex items-start justify-between gap-4 rounded-xl border border-border border-l-4 border-l-[color:var(--brand-red)] p-4"
-                  >
-                    <div className="min-w-0">
-                      <p className="text-base font-bold text-foreground">{p.name}</p>
-                      <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                        {p.detail}
-                      </p>
-                    </div>
-                    <p className="shrink-0 text-base font-extrabold text-[color:var(--brand-red)] sm:text-lg">
-                      {p.price}
-                    </p>
-                  </li>
-                ))}
-              </ul>
-
-              <p className="mt-6 font-semibold text-foreground">Bestil tid allerede i dag</p>
-              <div className="mt-3 flex flex-col gap-3 sm:flex-row">
-                <a
-                  href="tel:+4555222506"
-                  className="inline-flex flex-1 items-center justify-center gap-2 rounded-full bg-[color:var(--brand-red)] px-6 py-3.5 text-base font-semibold text-white shadow-sm transition-all hover:bg-[#b40e12] hover:shadow-md"
-                >
-                  <Phone size={18} />
-                  Ring 55 22 25 06
-                </a>
-                <a
-                  href="https://booking.synsdata.dk/10449-470"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group inline-flex flex-1 items-center justify-center gap-2 rounded-full border-2 border-border px-6 py-3.5 text-base font-semibold text-foreground transition-colors hover:border-[color:var(--brand-red)] hover:text-[color:var(--brand-red)]"
-                >
-                  Book tid
-                  <ArrowRight
-                    size={18}
-                    className="transition-transform group-hover:translate-x-0.5"
-                  />
-                </a>
-              </div>
-
-              <p className="mt-4 text-xs leading-relaxed text-muted-foreground">
-                Priserne er inkl. moms og inkluderer battericertifikat. Vi tester de fleste el- og
-                plugin-hybridmodeller. Battericertifikatet udstedes i samarbejde med AVILOO.
-              </p>
-            </div>
           </ScrollReveal>
         </div>
 
