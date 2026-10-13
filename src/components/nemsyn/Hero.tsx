@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Phone } from "lucide-react";
 import videoUrl from "@/assets/hero-video.mp4";
 
 export function Hero() {
@@ -36,6 +36,13 @@ export function Hero() {
           >
             Book tid nu
             <ArrowRight size={18} className="transition-transform group-hover:translate-x-0.5" />
+          </a>
+          <a
+            href="tel:+4555222506"
+            className="inline-flex w-full items-center justify-center gap-2 rounded-full border-2 border-white/30 bg-white/10 backdrop-blur px-7 py-3.5 text-base font-semibold text-white transition-colors hover:border-white/50 hover:bg-white/20 sm:w-auto"
+          >
+            <Phone size={18} />
+            Ring nu
           </a>
           <a
             href="#priser"

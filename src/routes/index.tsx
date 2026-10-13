@@ -8,6 +8,7 @@ import { Batteritest } from "@/components/nemsyn/Batteritest";
 import { Priser } from "@/components/nemsyn/Priser";
 import { Kontakt } from "@/components/nemsyn/Kontakt";
 import { Footer } from "@/components/nemsyn/Footer";
+import { CallBubble } from "@/components/nemsyn/CallBubble";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -27,6 +28,7 @@ function Index() {
         <Kontakt />
       </main>
       <Footer />
+      <CallBubble />
     </div>
   );
 }
