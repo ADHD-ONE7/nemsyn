@@ -3,12 +3,12 @@ import { Menu, X } from "lucide-react";
 import logoUrl from "@/assets/nemsyn-logo-navbar.png";
 
 const links = [
-  { href: "#om", label: "Om os" },
-  { href: "#ydelser", label: "Ydelser" },
-  { href: "#batteritest", label: "Batteritest" },
-  { href: "#priser", label: "Priser" },
-  { href: "#find", label: "Find os" },
-  { href: "#kontakt", label: "Kontakt" },
+  { href: "/#om", label: "Om os" },
+  { href: "/#ydelser", label: "Ydelser" },
+  { href: "/#batteritest", label: "Batteritest" },
+  { href: "/#priser", label: "Priser" },
+  { href: "/#find", label: "Find os" },
+  { href: "/#kontakt", label: "Kontakt" },
 ];
 
 export function Navbar() {
@@ -36,7 +36,7 @@ export function Navbar() {
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 pl-6 pr-4 sm:pr-6 lg:pr-8">
-        <a href="#top" className="flex shrink-0 items-center" aria-label="NemSyn forside">
+        <a href="/#top" className="flex shrink-0 items-center" aria-label="NemSyn forside">
           <img
             src={logoUrl}
             alt="NemSyn"
