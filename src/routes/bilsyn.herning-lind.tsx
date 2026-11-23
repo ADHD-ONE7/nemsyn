@@ -336,8 +336,10 @@ function BilsynHerningLind() {
           </div>
         </section>
 
+        <PriserKompakt />
+
         {/* Services */}
-        <section className="bg-[color:var(--brand-bg)] py-16 md:py-20">
+        <section className="bg-white py-16 md:py-20">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
             <h2 className="text-center text-3xl font-extrabold text-foreground sm:text-4xl">
               Det kan du få lavet i synshallen
@@ -355,10 +357,8 @@ function BilsynHerningLind() {
           </div>
         </section>
 
-        <PriserKompakt />
-
         {/* FAQ */}
-        <section className="bg-white py-16 md:py-24">
+        <section className="border-t border-border bg-white py-16 md:py-24">
           <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
             <h2 className="text-center text-3xl font-extrabold text-foreground sm:text-4xl">
               Ofte stillede spørgsmål om bilsyn i Herning
