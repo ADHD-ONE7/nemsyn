@@ -7,7 +7,7 @@ const links = [
   { href: "/#ydelser", label: "Ydelser" },
   { href: "/#batteritest", label: "Batteritest" },
   { href: "/#priser", label: "Priser" },
-  { href: "/#find", label: "Find os" },
+  { href: "/bilsyn/herning-lind/", label: "Find os" },
   { href: "/#kontakt", label: "Kontakt" },
 ];
 

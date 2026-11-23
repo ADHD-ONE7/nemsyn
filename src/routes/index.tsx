@@ -11,6 +11,9 @@ import { Footer } from "@/components/nemsyn/Footer";
 import { CallBubble } from "@/components/nemsyn/CallBubble";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    links: [{ rel: "canonical", href: "https://www.nemsyn.dk/" }],
+  }),
   component: Index,
 });
 

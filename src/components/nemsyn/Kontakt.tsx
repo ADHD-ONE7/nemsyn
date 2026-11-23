@@ -226,6 +226,12 @@ export function Kontakt() {
                     </div>
                   </li>
                 </ul>
+                <a
+                  href="/bilsyn/herning-lind/"
+                  className="mt-6 inline-flex text-sm font-semibold text-[color:var(--brand-red)] hover:underline"
+                >
+                  Se vejvisning og luftfoto af synshallen i Herning →
+                </a>
               </div>
 
               <div className="overflow-hidden rounded-2xl border border-border shadow-sm">

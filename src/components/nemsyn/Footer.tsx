@@ -6,6 +6,7 @@ const links = [
   { href: "/#batteritest", label: "Batteritest" },
   { href: "/#priser", label: "Priser" },
   { href: "/#kontakt", label: "Kontakt" },
+  { href: "/bilsyn/herning-lind/", label: "Bilsyn Herning – NemSyn Lind" },
   { href: "/gavekort", label: "Betingelser for gavekort" },
 ];
 
