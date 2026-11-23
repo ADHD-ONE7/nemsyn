@@ -4,7 +4,7 @@ import { ArrowRight, Phone, MapPin, Mail, Clock, Car, ChevronRight } from "lucid
 import { Navbar } from "@/components/nemsyn/Navbar";
 import { Footer } from "@/components/nemsyn/Footer";
 import { CallBubble } from "@/components/nemsyn/CallBubble";
-import { Priser } from "@/components/nemsyn/Priser";
+import { PriserKompakt } from "@/components/nemsyn/PriserKompakt";
 
 const SITE = "https://www.nemsyn.dk";
 // Cloudflare Pages serves prerendered folders with a trailing slash and 308s
@@ -355,7 +355,7 @@ function BilsynHerningLind() {
           </div>
         </section>
 
-        <Priser />
+        <PriserKompakt />
 
         {/* FAQ */}
         <section className="bg-white py-16 md:py-24">
